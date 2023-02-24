@@ -1,0 +1,98 @@
+<!--
+ * @Author: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
+ * @Date: 2023-02-20 10:20:28
+ * @LastEditors: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
+ * @LastEditTime: 2023-02-20 13:21:08
+ * @FilePath: \VSqianduan\code\关键帧动画-轮播图.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container{
+        width: 640px;
+        height:320px;
+        margin:0 auto;
+        overflow: hidden;
+    }
+    .swiper-slide img{
+        width: 640px;
+        height: 320px;
+    }
+    .swiper-slide{
+        float: left;
+    }
+    .swiper-wrapper{
+        width:9999px;
+        animation: swiperrun 10s  linear infinite;
+    }
+    .swiper-wrapper:hover{
+        animation-play-state: paused;
+    }
+    @keyframes swiperrun {
+        0%{
+           transform: translateX(0);
+        }
+        5%{
+           transform:translateX(-640px);
+        }
+
+        25%{
+           transform:translateX(-640px);
+        }
+
+        30%{
+           transform:translateX(-1280px);
+        }
+
+        50%{
+           transform:translateX(-1280px);
+        }
+        55%{
+           transform:translateX(-1920px);
+        }
+        75%{
+           transform:translateX(-1920px);
+        }
+        80%{
+           transform:translateX(-2560px);
+        }
+        100%{
+           transform:translateX(-2560px);
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="pic/p1.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="pic/p2.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="pic/p3.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="pic/p4.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="pic/p1.png" alt="">
+            </div>
+            <!-- 为了实现无缝隙轮播，会把第一份照片复制到最后一份 -->
+        </div>
+
+    </div>
+</body>
+</html> 
